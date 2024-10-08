@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+	name="My Custom PMD Ruleset"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https:/pmd.sourceforge.net/ruleset_2_0_0.xsd"
+	xsi:noNamespaceSchemaLocation="https:/pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+	<description>
+		My custom PMD ruleset that includes a wide range of rules without
+		overlapping with Checkstyle.
+	</description>
+
+	<!-- Basic rules -->
+	<rule ref="category/java/codestyle.xml/UnnecessaryConstructor" />
+	<rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName" />
+	<rule ref="category/java/codestyle.xml/UnnecessaryReturn" />
+	<rule ref="category/java/codestyle.xml/UnnecessaryModifier" />
+	<rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn" />
+
+	<!-- Best practices -->
+	<rule ref="category/java/bestpractices.xml/AvoidReassigningParameters" />
+	<rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" />
+	<rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP" />
+	<rule ref="category/java/bestpractices.xml/AvoidStringBufferField" />
+	<rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
+	<rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
+	<rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
+
+
+	<!-- Design -->
+	<rule ref="category/java/design.xml/AvoidDeeplyNestedIfStmts" />
+	<rule ref="category/java/design.xml/CollapsibleIfStatements" />
+	<rule ref="category/java/design.xml/CyclomaticComplexity" />
+	<rule ref="category/java/design.xml/ExcessiveParameterList" />
+	<rule ref="category/java/design.xml/NPathComplexity" />
+	<rule ref="category/java/design.xml/TooManyMethods" />
+	<rule ref="category/java/design.xml/ExcessiveMethodLength" />
+
+	<!-- Error prone -->
+	<rule ref="category/java/errorprone.xml/AvoidUsingOctalValues" />
+	<rule ref="category/java/errorprone.xml/CloseResource" />
+	<rule ref="category/java/errorprone.xml/AvoidCatchingThrowable" />
+	<rule ref="category/java/errorprone.xml/EmptyCatchBlock" />
+	<rule ref="category/java/errorprone.xml/EmptyFinallyBlock" />
+	<rule ref="category/java/errorprone.xml/EmptyIfStmt" />
+	<rule ref="category/java/errorprone.xml/EmptySwitchStatements" />
+	<rule ref="category/java/errorprone.xml/EmptyTryBlock" />
+	<rule ref="category/java/errorprone.xml/EmptyWhileStmt" />
+	<rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop" />
+
+	<!-- Security -->
+	<rule ref="category/java/security.xml/InsecureCryptoIv" />
+
+	<!-- Performance -->
+	<rule ref="category/java/performance.xml/BigIntegerInstantiation" />
+	<rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops" />
+	<rule ref="category/java/performance.xml/AvoidUsingShortType" />
+	<rule ref="category/java/performance.xml/UseStringBufferForStringAppends" />
+
+</ruleset>

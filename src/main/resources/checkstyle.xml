@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN" "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+	<!-- General -->
+	<module name="FileTabCharacter" />
+	<module name="NewlineAtEndOfFile" />
+	<module name="TreeWalker">
+
+		<!-- Imports -->
+		<module name="AvoidStarImport" />
+		<module name="EmptyForIteratorPad" />
+		<module name="AvoidEscapedUnicodeCharacters" />
+
+		<!-- Whitespace -->
+		<module name="EmptyLineSeparator" />
+		<module name="GenericWhitespace" />
+		<module name="NoWhitespaceAfter" />
+		<module name="NoWhitespaceBefore" />
+		<module name="OperatorWrap" />
+		<module name="ParenPad" />
+		<module name="MethodParamPad" />
+		<module name="TypecastParenPad" />
+		<module name="WhitespaceAfter" />
+		<module name="WhitespaceAround" />
+
+		<!-- Javadoc -->
+		<module name="JavadocMethod" />
+		<module name="JavadocType" />
+		<module name="JavadocVariable" />
+		<module name="SummaryJavadocCheck" />
+
+		<!-- Naming -->
+		<module name="ConstantName" />
+		<module name="LocalFinalVariableName" />
+		<module name="MemberName" />
+		<module name="MethodName" />
+		<module name="PackageName" />
+		<module name="ParameterName" />
+		<module name="TypeName" />
+
+		<!-- Design -->
+		<module name="DesignForExtension" />
+		<module name="FinalClass" />
+		<module name="InterfaceIsType" />
+		<module name="VisibilityModifier" />
+
+		<!-- Coding Practices -->
+		<module name="AvoidNestedBlocks" />
+		<module name="EmptyBlock" />
+		<module name="IllegalInstantiation" />
+		<module name="EqualsHashCode" />
+		<module name="MagicNumber" />
+		<module name="MissingSwitchDefault" />
+		<module name="EqualsHashCode" />
+		<module name="NoClone" />
+		<module name="OneStatementPerLine" />
+		<module name="SimplifyBooleanExpression" />
+		<module name="StringLiteralEquality" />
+		<module name="UnnecessaryParentheses" />
+		<module name="NeedBraces" />
+		<module name="AvoidStarImport" />
+		<module name="UnusedImports" />
+		<module name="ModifierOrder" />
+		<module name="PackageName" />
+
+
+		<!-- Performance -->
+		<module name="InnerAssignment" />
+		<module name="ModifiedControlVariable" />
+		<module name="AvoidInlineConditionals" />
+		<module name="MethodLength" />
+		<module name="RedundantModifier" />
+		<module name="ModifierOrder" />
+
+		<!-- Java8 Specific -->
+		<module name="LambdaParameterName" />
+		<module name="LambdaBodyLength" />
+
+
+	</module>
+
+	<!-- Other -->
+	<module name="RegexpSingleline" />
+	<module name="RegexpMultiline" />
+
+
+</module>
